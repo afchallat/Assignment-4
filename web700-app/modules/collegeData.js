@@ -6,7 +6,7 @@ var sequelize = new Sequelize('d9jni5988dpaqi', 'sufoqrbfilwajz', '2c7031bee167f
     dialectOptions: {
         ssl: { rejectUnauthorized: false }
     },
-    query:{raw: true}
+    query: {raw: true }
 });
 
 var Student = sequelize.define('Student',{
@@ -185,7 +185,7 @@ module.exports.updateStudent=function(studentData)
 
     module.exports.addCourse = function(courseData)
     {
-        return new Promise(function(resolve,reject){
+        return new Promise(function(resolve , reject){
         for(const ele in courseData){
             if(courseData[ele]==""){
                 courseData[ele]=null
