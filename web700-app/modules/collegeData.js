@@ -1,6 +1,7 @@
 const Sequelize = require('sequelize');
-var sequelize = new Sequelize('d97ai7u6u2jt6d', 'fwoymmxflowiwk', '1d58cfb0f894f592ba0448b52f3a3e58fa17d32322e177df72b6ac5c26fd5b9c', {
-    host: 'ec2-44-195-100-240.compute-1.amazonaws.com',
+var sequelize = new Sequelize('d9jni5988dpaqi', 'sufoqrbfilwajz', '2c7031bee167f125f425fdee84725b0a9e1cf2020f7fe54b4878e99ccd455405', {
+    host: 'ec2-52-205-61-230.compute-1.amazonaws.com',
+    dialect: 'postgres',
     port: 5432,
     dialectOptions: {
         ssl: { rejectUnauthorized: false }
